@@ -1,0 +1,6 @@
+5
+1 1 1 2 2016 2 4 Le Quang Huy
+0 0 2 3 2017 1 10 Phan Thi Truc Ly
+0 1 1 1 2014 0 9 A B C
+1 0 1 1 2015 3 5 C B A
+1 1 1 1 2018 4 0 X X X
