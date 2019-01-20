@@ -2,7 +2,7 @@
 using namespace std;
 #include <fstream>
 struct Ngay{
-	int d, m, y;
+	int d, m, y;// NGAY, THANG, NAM
 };
 
 class Nhanvien{
@@ -29,14 +29,14 @@ class Nhanvien{
 		}
 		
 };
-
+//------NVVP
 class NhanvienVP : public Nhanvien{
 	public:
 		int Songayvang;
 		const int Dinhmucvang = 4;
 		const int Dinhmucphat = 50000;
 		
-		void NhapNVVP(){
+		void NhapNVVP(){  
 		cout<<endl<<"Nhap ten: ";
 		fflush(stdin);
 		cin.getline(Ten,30);
@@ -89,7 +89,7 @@ class NhanvienVP : public Nhanvien{
 
 		
 };
-
+//-------NVSX
 class NhanvienSX : public Nhanvien{
 	public:
 		int Sosp;
@@ -147,7 +147,7 @@ class NhanvienSX : public Nhanvien{
 		
 };
 
-
+// TU TAO THONG TIN NHAN VIEN
 void NhapmangNV(Nhanvien a[], NhanvienVP c[], NhanvienSX d[], int n)
 {
 	int vp = 0, sx = 0;
@@ -167,7 +167,7 @@ void NhapmangNV(Nhanvien a[], NhanvienVP c[], NhanvienSX d[], int n)
 			
 		}
 }
-
+// DOC THONG TIN NV TU FILE
 void DocmangNV(Nhanvien a[], NhanvienVP c[], NhanvienSX d[], int &n){
 	int vp = 0,sx = 0;
 	fstream doc;
@@ -200,7 +200,7 @@ void DocmangNV(Nhanvien a[], NhanvienVP c[], NhanvienSX d[], int &n){
 	
 }
 
-
+//XUAT THONG TIN NV
 void XuatmangNV(Nhanvien a[], NhanvienVP c[], NhanvienSX d[], int n){
 	int vp = 0, sx = 0;	
 	for(int i = 0; i < n; i++)
